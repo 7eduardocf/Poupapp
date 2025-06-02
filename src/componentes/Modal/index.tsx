@@ -1,10 +1,9 @@
-import React, { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
+import React, { forwardRef, useImperativeHandle, useRef } from "react";
 import {
     ButtonGroup,
     CloseButton,
     ModalContainer,
     ModalHeader,
-    ModalOverlay,
 } from "./style";
 import Botao from "../Botao";
 
@@ -30,8 +29,7 @@ const Modal = forwardRef<ModalHandle,ModalProps>(({
     const dialogRef = useRef<HTMLDialogElement>(null);
     
     const fechaModal = () =>{
-        dialogRef.current?.close
-        console.log(dialogRef.current);
+        dialogRef.current?.close()
     }
     useImperativeHandle(ref, () => ({
         open: ()=>dialogRef.current?.showModal(),
@@ -45,7 +43,6 @@ const Modal = forwardRef<ModalHandle,ModalProps>(({
     }
 
     return (
-        <ModalOverlay>
             <ModalContainer ref={dialogRef} onClick={aoClicarForaModal}>
                 <ModalHeader>
                     <div>
@@ -64,7 +61,6 @@ const Modal = forwardRef<ModalHandle,ModalProps>(({
                     </Botao>
                 </ButtonGroup>
             </ModalContainer>
-        </ModalOverlay>
     );
 });
 
