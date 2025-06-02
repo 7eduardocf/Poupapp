@@ -25,6 +25,7 @@ const TransacaoModal = ({ isOpen, onCloseModal }: TransacaoModalProps) => {
     onCloseModal();
   };
 
+
   return (
     <Modal
       aoFechar={() => onCloseModal()}
