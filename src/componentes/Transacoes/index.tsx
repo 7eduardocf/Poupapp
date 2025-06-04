@@ -76,10 +76,6 @@ const Transacoes = () => {
     data: "",
     });
 
-    function onCloseModal() {
-        throw new Error("Function not implemented.");
-    }
-
     return (
         <Cartao>
             <CartaoCabecalho>Movimentação financeira</CartaoCabecalho>
