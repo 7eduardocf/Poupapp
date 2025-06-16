@@ -15,7 +15,7 @@ const OrcamentoDiario = () => {
         <Cartao>
             <CartaoCabecalho>Orçamento diário disponível</CartaoCabecalho>
             <CartaoCorpo>
-                <Descricao>{formatador.format(usuario?.orcamentoDiario)}</Descricao>
+                <Descricao>{formatador.format(usuario?.orcamentoDiario ?? 0)}</Descricao>
             </CartaoCorpo>
         </Cartao>
     );

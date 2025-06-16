@@ -1,4 +1,20 @@
 {
-  "usuarios": [],
-  "transacoes": []
+  "usuarios": [
+    {
+      "id": "31e3",
+      "nome": "Eduardo",
+      "renda": "2500",
+      "orcamentoDiario": 83.33333333333333
+    }
+  ],
+  "transacoes": [
+    {
+      "id": "f932",
+      "nome": "Pix",
+      "valor": "100",
+      "tipo": "receita",
+      "categoria": "Alimentação",
+      "data": "2025-05-02"
+    }
+  ]
 }
