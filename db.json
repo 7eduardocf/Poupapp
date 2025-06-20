@@ -5,6 +5,18 @@
       "nome": "Eduardo",
       "renda": "2500",
       "orcamentoDiario": 83.33333333333333
+    },
+    {
+      "id": "bc6a",
+      "nome": "Eduardo",
+      "renda": "2500",
+      "orcamentoDiario": 83.33333333333333
+    },
+    {
+      "id": "14e3",
+      "nome": "Eduardo",
+      "renda": "2500",
+      "orcamentoDiario": 83.33333333333333
     }
   ],
   "transacoes": [
@@ -15,6 +27,15 @@
       "tipo": "receita",
       "categoria": "Alimentação",
       "data": "2025-05-02"
+    },
+    {
+      "id": "3ff9",
+      "nome": null,
+      "valor": "100",
+      "tipo": "despesa",
+      "categoria": "oi",
+      "data": "2025-06-19",
+      "userId": "31e3"
     }
   ]
 }
